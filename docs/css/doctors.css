@@ -1,0 +1,86 @@
+.doctors {
+    padding-block: 50px;
+}
+.doctors .rounded, .doctors .large-p {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+.doctors .items {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.doctors .item {
+    width: 100%;
+    background-color: var(--light);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.doctors .item picture img {
+    transform: translate(0);
+    transition: 0.5s;
+}
+.doctors .item .info {
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.doctors .item .info h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+.doctors .item .info h4 {
+    padding-block: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--primary);
+}
+.doctors .icons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.doctors .icon-container {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.doctors .icon-container i {
+    font-size: 1.125rem;
+    color: var(--primary);
+    transition: 0.5s;
+}
+.doctors .icon-container:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+}
+.doctors .icon-container:hover i {
+    color: white;
+}
+.doctors .item:hover .icons {
+    transform: translate(-50%, -160%);
+}
+.doctors .item:hover picture img,
+.doctors .item:hover .info {
+    transform: translateY(-40px);
+}
+.doctors .item:hover .icon-container {
+    opacity: 1;
+}

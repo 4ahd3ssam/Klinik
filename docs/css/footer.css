@@ -1,0 +1,114 @@
+footer {
+    padding: 50px 0;
+    background-color: var(--dark);
+}
+footer .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+footer .items .item {
+    width: 100%;
+}
+footer h3 {
+    color: white;
+    padding-bottom: 10px;
+}
+footer .address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+footer .address p i {
+    color: rgb(220, 220, 220);
+    padding-right: 8px;
+    font-size: 1.125rem;
+}
+footer .address p {
+    color: rgb(220, 220, 220);
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+footer .icons {
+    display: flex;
+    column-gap: 10px;
+}
+footer .icons .icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(220, 220, 220);
+    transition: 0.5s;
+}
+footer .icons .icon-container i {
+    color: rgb(220, 220, 220);
+    font-size: 1rem;
+    transition: 0.5s;
+}
+footer .icons .icon-container:hover {
+    background-color: white;
+    cursor: pointer;
+}
+footer .icons .icon-container:hover i {
+    color: var(--primary);
+}
+footer .services-footer a, footer .quick-links a {
+    color: white;
+    display: block;
+    padding-block: 8px;
+    transition: 0.3s;
+    font-size: 0.75rem;
+}
+footer .services-footer a i, footer .quick-links a i {
+    padding-right: 8px;
+    font-size: 0.625rem;
+}
+footer .services-footer a:hover, footer .quick-links a:hover {
+    color: var(--primary);
+    letter-spacing: 2px;
+}
+footer .news-letter p {
+    color: white;
+    font-size: 0.75rem;
+}
+footer form {
+    width: 100%;
+    padding-block: 20px;
+    position: relative;
+}
+footer form input {
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+footer form input:focus {
+    outline: none;
+    border: 4px solid var(--primary);
+}
+footer form button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer form button a {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+footer form button a:hover {
+    background-color: var(--secondary);
+}

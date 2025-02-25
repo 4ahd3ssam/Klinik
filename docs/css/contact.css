@@ -1,0 +1,113 @@
+.container {
+    padding-block: 40px;
+}
+.contact-ways {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.contact-ways .item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    background-color: var(--light);
+    padding: 40px;
+    border-radius: 10px;
+}
+.contact-ways .icon {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-ways .icon i {
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+.contact-ways .item h3 {
+    color: gray;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.contact-ways .item h4 {
+    color: var(--dark);
+    font-size: 1.125rem;
+}
+.form-map {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.form-map > div {
+    width: 100%;
+}
+.map {
+    align-self: stretch;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.form-map .small-p {
+    color: gray;
+    font-size: 1rem;
+    line-height: 26px;
+    padding-block: 30px;
+}
+.form-map .form-part {
+    background-color: var(--light);
+    padding: 40px;
+    border-radius: 10px;
+}
+.form-map form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+.form-map input, .form-map textarea, .form-map button {
+    width: 100%;
+}
+.form-map input, .form-map textarea {
+    padding: 20px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 0.1s;
+}
+.form-map textarea {
+    height: 100px;
+}
+.form-map input:focus, .form-map textarea:focus {
+    outline: none;
+    border: 4px solid rgba(0, 0, 255, 0.24);
+}
+.form-map button {
+    border: none;
+    background-color: transparent;
+    margin-top: 20px;
+}
+.form-map button a {
+    display: block;
+    padding: 20px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 0.875rem;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.form-map button a:hover {
+    background-color: var(--secondary);
+}

@@ -1,0 +1,116 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    padding-block: 50px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.about > div {
+    width: 100%;
+}
+.about .images-part {
+    display: flex;
+    flex-direction: column;
+}
+.about .images-part .img1 {
+    width: 70%;
+    align-self: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+.about .images-part .img2 {
+    width: 50%;
+    align-self: flex-start;
+    margin-top: -25%;
+    border-top: 20px solid white;
+    border-right: 20px solid white;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.about .images-part .img2 img {
+    border-bottom-left-radius: 15px;
+}
+.about .images-part .img1 img {
+    border-radius: 15px;
+}
+.about .images-part img {
+    display: block;
+    width: 100%;
+}
+.about .layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.638);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+.about .images-part .img1 .layer {
+    border-radius: 15px;
+}
+.about .images-part .img2 .layer {
+    border-bottom-left-radius: 15px;
+}
+.about .layer i {
+    color: white;
+    font-size: 2.5rem;
+    padding: 30px
+}
+.about .images-part .img1:hover .layer,
+.about .images-part .img2:hover .layer {
+    transform: translateY(0px);
+}
+.about .info-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.about .info-part .small-p {
+    color: gray;
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding-top: 15px;
+    line-height: 22px;
+}
+.about .info-part .items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 20px;
+}
+.about .info-part .item {
+    display: flex;
+    align-items: center;
+}
+.about .info-part .item span {
+    color: gray;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.about .info-part .item i {
+    color: var(--primary);
+    padding-right: 10px;
+}
+.about .info-part button {
+    margin-top: 50px;
+    border: none;
+}
+.about .info-part button a {
+    background-color: var(--primary);
+    padding: 20px 40px;
+    color: white;
+    border-radius: 30px;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+.about .info-part button a:hover {
+    background-color: var(--secondary);
+}

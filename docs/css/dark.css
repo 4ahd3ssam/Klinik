@@ -1,0 +1,79 @@
+:root {
+    --dark-gray: #161616;
+    --light-gray: #bcbcbc;
+    --gray: gray;
+    --dark-primary: #3c3b3b;
+}
+body:has(#check-mode:checked) {
+    --primary: rgb(50, 50, 50);
+    --light:  #3c3b3b;
+    --dark: #3c3b3b;
+    --secondary: rgb(12, 12, 12);
+}
+body:has(#check-mode:checked) h4 {
+    color: white;
+}
+body:has(#check-mode:checked) .doctors .info h3 {
+    color: #bcbcbc;
+}
+.light {
+    display: none;
+}
+body:has(#check-mode:checked) .light {
+    display: block;
+}
+body:has(#check-mode:checked) .dark {
+    display: none;
+}
+body:has(#check-mode:checked) {
+    background-color: #161616;
+}
+body:has(#check-mode:checked) nav,
+body:has(#check-mode:checked) nav .drop-down {
+    background-color: var(--dark-gray);
+    border-color: rgba(128, 128, 128, 0.384);
+}
+
+body:has(#check-mode:checked) .contact-bar {
+    background-color: var(--dark-primary);
+    color: white;
+}
+body:has(#check-mode:checked) .contact-bar i {
+    color: var(--gray);
+}
+
+body:has(#check-mode:checked) nav .drop-down li:hover {
+    background-color: var(--dark-primary);
+}
+body:has(#check-mode:checked) nav .lg-link {
+    background-color: var(--dark-primary);
+}
+body:has(#check-mode:checked) a,
+body:has(#check-mode:checked) label,
+body:has(#check-mode:checked) .nav-logo a h1,
+body:has(#check-mode:checked) .nav-logo i {
+    color: white;
+}
+body:has(#check-mode:checked) a:hover,
+body:has(#check-mode:checked) .down-arrow:hover {
+    color: var(--light-gray)
+}
+body:has(#check-mode:checked):has(#slide1:checked) .slide1-label,
+body:has(#check-mode:checked):has(#slide2:checked) .slide2-label,
+body:has(#check-mode:checked):has(#slide3:checked) .slide3-label {
+    background-color: var(--dark-primary);
+}
+body:has(#check-mode:checked) .hero .info-part {
+    background-color: var(--dark-primary);
+}
+body:has(#check-mode:checked) .img2 {
+    border-color: var(--dark-gray)
+}
+body:has(#check-mode:checked):has(#feedback1:checked) .feedback1-label,
+body:has(#check-mode:checked):has(#feedback2:checked) .feedback2-label,
+body:has(#check-mode:checked):has(#feedback3:checked) .feedback3-label {
+    background-color: rgb(0, 0, 0);
+}
+body:has(#check-mode:checked) .large-p {
+    color: white;
+}

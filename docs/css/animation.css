@@ -1,0 +1,105 @@
+@keyframes animated-cardiology {
+    0% {
+        content: "C";
+    }
+    10% {
+        content: "Ca";
+    }
+    20% {
+        content: "Car";
+    }
+    30% {
+        content: "Card";
+    }
+    40% {
+        content: "Cardi";
+    }
+    50% {
+        content: "Cardio";
+    }
+    60% {
+        content: "Cardiol";
+    }
+    70% {
+        content: "Cardiolo";
+    }
+    80% {
+        content: "Cardiolog";
+    }
+    90% {
+        content: "Cardiology";
+    }
+    100% {
+        content: "Cardiology";
+    }
+}
+@keyframes animated-neurology {
+    0% {
+        content: "N";
+    }
+    10% {
+        content: "Ne";
+    }
+    20% {
+        content: "Neu";
+    }
+    30% {
+        content: "Neur";
+    }
+    40% {
+        content: "Neuro";
+    }
+    50% {
+        content: "Neurol";
+    }
+    60% {
+        content: "Neurolo";
+    }
+    70% {
+        content: "Neurolog";
+    }
+    80% {
+        content: "Neurology";
+    }
+    90% {
+        content: "Neurology";
+    }
+    100% {
+        content: "Neurology";
+    }
+}
+@keyframes animated-pulmonary {
+    0% {
+        content: "P";
+    }
+    10% {
+        content: "Pu";
+    }
+    20% {
+        content: "Pul";
+    }
+    30% {
+        content: "Pulm";
+    }
+    40% {
+        content: "Pulmo";
+    }
+    50% {
+        content: "Pulmon";
+    }
+    60% {
+        content: "Pulmona";
+    }
+    70% {
+        content: "Pulmonar";
+    }
+    80% {
+        content: "Pulmonary";
+    }
+    90% {
+        content: "Pulmonary";
+    }
+    100% {
+        content: "Pulmonary";
+    }
+}

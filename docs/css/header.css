@@ -1,0 +1,26 @@
+.header {
+    background-image: url('../images/header-page.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.header h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.header div {
+    font-size: 1.125rem;
+    color: white;
+}
+.header div a {
+    color: white;
+}
+.header .page {
+    color: var(--primary);
+}

@@ -1,0 +1,104 @@
+.appointment {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.appointment > div {
+    width: 100%;
+}
+.appointment .rounded, .appointment .large-p {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+.appointment .small-p {
+    color: gray;
+    font-size: 1.125rem;
+    line-height: 26px;
+    padding-block: 30px;
+}
+.appointment .contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.appointment .item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    background-color: var(--light);
+    padding: 40px;
+    border-radius: 10px;
+}
+.appointment .icon {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appointment .icon i {
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+.appointment .item h3 {
+    color: gray;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.appointment .item h4 {
+    color: var(--dark);
+    font-size: 1.125rem;
+}
+.appointment .form-part {
+    background-color: var(--light);
+    padding: 40px;
+    border-radius: 10px;
+}
+.appointment form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.appointment input, .appointment textarea, .appointment button {
+    width: 100%;
+}
+.appointment input, .appointment textarea, .appointment option {
+    padding: 20px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 0.1s;
+}
+.appointment textarea {
+    height: 100px;
+}
+.appointment input:focus, .appointment textarea:focus, .appointment select:focus {
+    outline: none;
+    border: 4px solid rgba(0, 0, 255, 0.24);
+}
+.appointment button {
+    border: none;
+    background-color: transparent;
+    margin-top: 20px;
+}
+.appointment button a {
+    display: block;
+    padding: 20px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 0.875rem;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.appointment button a:hover {
+    background-color: var(--secondary);
+}

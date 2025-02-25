@@ -1,0 +1,102 @@
+@media screen and (max-width: 399px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 400px) { 
+    .container {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .features .items .item {
+        width: calc(100% / 2 - 20px);
+    }
+}
+@media screen and (min-width: 800px) { 
+    .container {
+        width: 90%;
+    }
+    .services .item {
+        width: calc(100% / 2 - 20px);
+    }
+    .hero .info-part .item {
+        width: calc(100% / 3 - 20px)
+    }
+    .doctors .item {
+        width: calc(100% / 2 - 20px);
+    }
+    .appointment input {
+        width: calc(100% / 2 - 20px);
+    }
+    .testimonial {
+        width: 50%;
+        margin: auto;
+    }
+    footer .items .item {
+        width: calc(100% / 2 - 30px);
+    }
+}
+@media screen and (min-width: 1100px) {
+    nav .main-nav {
+        padding-right: 0px;
+    }
+    .sm-nav, .menu-icon {
+        display: none;
+    }
+    .lg-nav {
+        display: block;
+    }
+    .contact-bar {
+        display: flex;
+    }
+    .hero .info-part {
+        order: -1;
+    }
+    .hero > div {
+        width: 50%;
+    }
+    .hero .info-part p {
+        font-size: 42px;
+        font-weight: 800;
+    }
+    .hero .info-part h3 {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .hero .info-part h4 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .about > div {
+        width: calc(100% / 2 - 20px);
+    }
+    .about .images-part .img2 {
+        margin-top: -40%;
+    }
+    .services .item {
+        width: calc(100% / 3 - 20px);
+    }
+
+    .features .info-part, .features .grid-layout {
+        width: calc(100% / 2 - 20px);
+    }
+    .doctors .item {
+        width: calc(100% / 4 - 20px);
+    }
+    .appointment > div {
+        width: calc(100% / 2 - 20px);
+    }
+    footer .items .item {
+        width: calc(100% / 4 - 30px);
+    }
+    .contact-ways .item {
+        width: calc(100% / 3 - 20px);
+    }
+    .form-map .input-50 {
+        width: calc(100% / 2 - 5px)
+    }
+    .form-map > div {
+        width: calc(100% / 2 - 20px);
+    }
+}

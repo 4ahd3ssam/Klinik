@@ -1,0 +1,81 @@
+.services {
+    padding: 50px 0;
+}
+.services .large-p {
+    width: fit-content;
+    text-align: center;
+}
+.services .rounded, .services .large-p {
+    margin: auto;
+}
+.services .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.services .item {
+    width: 100%;
+    background-color: var(--light);
+    padding: 40px;
+    border-radius: 10px;
+    transition: 0.5s;
+} 
+.services .item .icon-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .item .icon-container i {
+    color: var(--primary);
+    font-size: 1.875rem;
+}
+.services .item h4 {
+    color: var(--dark);
+    font-size: 1.625rem;
+    font-weight: 700;
+    padding-block: 20px;
+}
+.services .item p {
+    color: gray;
+}
+.services .item .plus {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+.services .item .plus a {
+    display: flex;
+}
+.services .item .plus span {
+    display: block;
+    width: 100px;
+    color: gray;
+}
+.services .item .plus i {
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-inline: 12px;
+}
+.services .item:hover .plus {
+    width: 150px;
+}
+.services .item:hover {
+    margin-top: -10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+}

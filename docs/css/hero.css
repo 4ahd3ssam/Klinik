@@ -1,0 +1,107 @@
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero > div {
+    width: 100%;
+}
+.hero .carousel {
+    overflow: hidden;
+    position: relative;
+}
+.hero .slides {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 300%;
+    transition: 0.5s ease-in-out;
+}
+.hero .slide {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    position: relative;
+}
+.hero .slide img {
+    width: 100%;
+    display: block;
+}
+.hero .slide h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.hero .slide .cardiology::after {
+    animation: animated-cardiology 2s infinite;
+}
+.hero .slide .neurology::after {
+    animation: animated-neurology 2s infinite;
+}
+.hero .slide .pulmonary::after {
+    animation: animated-pulmonary 2s infinite;
+}
+.hero .navigation {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    column-gap: 10px;
+}
+body:has(#slide1:checked) .hero .slides {
+    transform: translateX(0);
+}
+body:has(#slide2:checked) .hero .slides {
+    transform: translateX(-33.333%);
+}
+body:has(#slide3:checked) .hero .slides {
+    transform: translateX(-66.666%);
+}
+body:has(#slide1:checked) .slide1-label,
+body:has(#slide2:checked) .slide2-label,
+body:has(#slide3:checked) .slide3-label {
+    background-color: var(--primary);
+}
+.hero .info-part {
+    padding: 50px;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .info-part p {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.hero .info-part .items {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.hero .info-part .item {
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+}
+.hero .info-part .item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+}
+.hero .info-part .item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.hero .info-part .item h4 {
+    font-size: 1rem;
+    font-weight: 400;
+}
